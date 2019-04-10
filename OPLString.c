@@ -1,9 +1,8 @@
-#include "DAString.h"
-#include <stdbool.h>
+#include "OPLString.h"
 
-#define DA_NULL 0
+#define OPL_NULL 0
 
-int da_strlen(char * array)
+int opl_strlen(char * array)
 {
 	int i = 0;
 	
@@ -13,10 +12,10 @@ int da_strlen(char * array)
 	return i;
 }
 
-int da_atoi(char * array)
+int opl_atoi(char * array)
 {
 	int number = 0;
-	int length = da_strlen(array);
+	int length = opl_strlen(array);
 	int k = 1;
 
 	for (int i = length - 1; i >= 0; --i)
