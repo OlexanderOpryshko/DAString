@@ -38,3 +38,21 @@ int opl_atoi(char * array)
 
 	return number;
 }
+
+int opl_memcmp(char * first_array, char * second_array, int count)
+{
+	for (int i = 0; i < count; i++) 
+	{
+		if (first_array[i] > second_array[i])
+			return 1;
+		else if (first_array[i] < second_array[i])
+			return -1;
+	}
+
+	return 0;
+}
+/*int opl_memicmp(char * first_array, char * second_array, int count)
+{
+
+}*/
+
