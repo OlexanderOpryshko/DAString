@@ -25,7 +25,7 @@ int opl_memicmp(char first_array[], char second_array[], int count);
 /*
 **
 **	Function to compare the first COUNT values of arrays
-**	but ignores the difference in registersж
+**	but ignores the difference in registers
 **
 */
 
