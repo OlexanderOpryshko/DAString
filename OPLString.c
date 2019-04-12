@@ -51,8 +51,26 @@ int opl_memcmp(char * first_array, char * second_array, int count)
 
 	return 0;
 }
-/*int opl_memicmp(char * first_array, char * second_array, int count)
+int opl_memicmp(char first_array[], char second_array[], int count)
 {
 
-}*/
+	for (int i = 0; i < count; i++) 
+	{
+		if (first_array[i] >= 'A' && first_array[i] <= 'Z')
+			first_array[i] = (first_array[i] - 'A') + 'a';
+
+		if (second_array[i] >= 'A' && second_array[i] <= 'Z')
+			second_array[i] = (second_array[i] - 'A') + 'a';
+
+		if (first_array[i] > second_array[i])
+			return 1;
+		
+		else if (first_array[i] < second_array[i])
+			return -1;
+	}
+
+	return 0;
+}
+
+
 

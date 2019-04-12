@@ -21,7 +21,7 @@ int opl_memcmp(char * first_array, char * second_array, int count);
 **	Function to compare the first COUNT values of arrays
 **
 */
-//int opl_memicmp(char * first_array, char * second_array, int count);
+int opl_memicmp(char first_array[], char second_array[], int count);
 /*
 **
 **	Function to compare the first COUNT values of arrays
