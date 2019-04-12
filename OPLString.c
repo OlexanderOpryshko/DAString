@@ -72,5 +72,31 @@ int opl_memicmp(char first_array[], char second_array[], int count)
 	return 0;
 }
 
+int opl_strchr(char * array, char s)
+{
+	int i;
+	int length = opl_strlen(array);
 
+	for (i = 0; i < length; i++)
+	{
+		if (array[i] == s)
+			return i;
+	}
+
+	return OPL_NULL;
+}
+
+int opl_strrchr(char * array, char s)
+{
+	int i;
+	int length = opl_strlen(array);
+
+	for (i = length; i >= 0; i--)
+	{
+		if (array[i] == s)
+			return i;
+	}
+
+	return OPL_NULL;
+}
 
